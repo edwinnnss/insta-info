@@ -36,8 +36,8 @@ async function getUserId(username) {
     )
 
     console.log('User ID:', response.data.graphql.user.id)
-  } catch (_) {
-    console.error('Error: Something wrong!')
+  } catch (e) {
+    console.error('Error: Something wrong!', e)
   }
 }
 
